@@ -14,3 +14,5 @@ Commande $ rackup pour lancer le serveur > Le port d'écoute est désormais sur 
 
 Comme c'est la convention de se mettre sur 4567 pour une app Sinatra et que nous sommes dans une app Sinatra, on peut se brancher sur le port 4567 en faisant $ rackup -p 4567 😎
 
+On ajoute une surcouche à Rackup qui recharge automatiquement l'application en cas de modification. Cette surcouche est une gem dénommée shotgun
+
