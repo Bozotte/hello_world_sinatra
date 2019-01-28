@@ -16,3 +16,5 @@ Comme c'est la convention de se mettre sur 4567 pour une app Sinatra et que nous
 
 On ajoute une surcouche à Rackup qui recharge automatiquement l'application en cas de modification. Cette surcouche est une gem dénommée shotgun
 
+Après avoir fait l'installation du bundle, on peut l'utiliser en passant la commande $ shotgun -p 4567 dans le terminal
+
