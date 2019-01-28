@@ -12,6 +12,12 @@ class ApplicationController < Sinatra::Base ##classe ApplicationController héri
   end
 
   post '/gossips/new/' do
-  Gossip.new("auteur","description").save
+    Gossip.new(params[:gossip_author],params[:gossip_content]).save
+    redirect '/'
   end
+
+  get '/' do
+		#permet d'insérer dans notre fichier ERB des variables que l'on utilisera dans la vue.
+		erb :index, locals: {gossips: Gossip.all}
+	end
 end

@@ -5,5 +5,13 @@
   <body>
     <h1> Bienvenue sur mon super site de gossip</h1>
     <a href="/gossips/new/">La liste des potins arrivent, en attendant, va faire un nouveau potin ici</a>
-  </body>
-</html>
+    <%#<%  te sert a executer du code(un .each par exemple)%>
+    		<%# <%= sert à afficher ce qui est entre balises %>
+    		<% Gossip.all.each do |gossip| %>
+              <p>
+                <%= gossip.author %><br/>
+                <%= gossip.content %>
+              </p>
+        <% end %>
+      </body>
+    </html>
