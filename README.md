@@ -1,2 +1,5 @@
-# hello_world_sinatra
-Sinatra 
+# Gem Sinatra 
+
+Ressources : 
+- http://sinatrarb.com/intro.html
+
