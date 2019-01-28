@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require 'gossip'
 
 class ApplicationController < Sinatra::Base ##classe ApplicationController hérite de la classe Sinatra::Base = ApplicationController aura toutes les fonctionnalités de la classe Sinatra::Base.
   get '/' do # "si quelqu'un va sur l'adresse '/', exécute ce code !"
@@ -10,11 +11,7 @@ class ApplicationController < Sinatra::Base ##classe ApplicationController héri
     erb :new_gossip
   end
 
-  post 'gossips/new/' do
-    puts "Hello World"
-  end
-
   post '/gossips/new/' do
-  Gossip.new(les_entrées_du_gossip).save
+  Gossip.new("auteur","description").save
   end
 end

@@ -1,7 +1,16 @@
+require 'csv'
+
 class Gossip
+  def initialize(author, content)
+    @author = author
+    @content = content
+  end
 
 def save
-  
-end # Fin de la méthode save
+  CSV.open("./db/gossip.csv", "ab") do |csv| # Apen > ajoute ligne au fichier existant
+    csv << [@author,@content]
+  end
+  return "c'est ici et maintenant"
+end
 
-end # Fin de la class Gossip
+end
