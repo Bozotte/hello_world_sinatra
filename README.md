@@ -8,3 +8,5 @@ Ressources :
 
 - http://sinatrarb.com/intro.html
 
+Il existe un standard qui s'appelle Rack et qui lance des serveurs Ruby
+
